@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  astra:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: astra-container
+    volumes:
+      - /dev/dvb:/dev/dvb  # Route devices of DVB/S
+    privileged: true
+    network_mode: "host"
+    restart: unless-stopped
