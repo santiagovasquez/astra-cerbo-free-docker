@@ -26,8 +26,7 @@ The core of the system is the `stream.lua` script, which defines DVB adapters, N
 
 ```
 astra-docker/
-├── astra-free/
-│   └── scripts/
+├── scripts/
 │       └── stream.lua        # Main configuration script
 ├── Dockerfile                # Astra Docker image
 ├── docker-compose.yml        # Service orchestration
@@ -245,12 +244,11 @@ El corazón del sistema es el script `stream.lua`, que define adaptadores DVB, d
 
 ```
 astra-docker/
-├── astra-free/
-│   └── scripts/
-│       └── stream.lua        # Script principal de configuración
-├── Dockerfile                # Imagen Docker de Astra
-├── docker-compose.yml        # Orquestación de servicios
-└── README.md                 # Este documento
+├── scripts/
+│       └── stream.lua        # Main configuration script
+├── Dockerfile                # Astra Docker image
+├── docker-compose.yml        # Service orchestration
+└── README.md                 # This document
 ```
 
 ---
